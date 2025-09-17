@@ -20,7 +20,7 @@ function Contacts() {
       return;
     }
 
-    fetch("http://localhost:3000/api/contacts", {
+    fetch("https://fullstack-backend-fwbm.onrender.com/api/contacts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,7 @@ function Contacts() {
       return;
     }
 
-    fetch(`http://localhost:3000/api/contacts/${id}`, {
+    fetch(`https://fullstack-backend-fwbm.onrender.com/api/contacts/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     })
@@ -81,7 +81,7 @@ function Contacts() {
       return;
     }
 
-    return fetch(`http://localhost:3000/api/contacts/${id}`, {
+    return fetch(`https://fullstack-backend-fwbm.onrender.com/api/contacts/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -149,7 +149,7 @@ function Contacts() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      fetch("http://localhost:3000/api/contacts", {
+      fetch("https://fullstack-backend-fwbm.onrender.com/api/contacts", {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       })

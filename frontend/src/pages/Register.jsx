@@ -9,7 +9,7 @@ function Register() {
 
   function Register(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/api/auth/register", {
+    fetch("https://fullstack-backend-fwbm.onrender.com/api/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),

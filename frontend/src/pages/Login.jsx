@@ -11,7 +11,7 @@ function Login() {
 
   function Login(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/api/auth/login", {
+    fetch("https://fullstack-backend-fwbm.onrender.com/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
